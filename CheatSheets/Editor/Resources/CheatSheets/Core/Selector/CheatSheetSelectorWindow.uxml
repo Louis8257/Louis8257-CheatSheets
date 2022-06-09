@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="Root" style="flex-grow: 1; margin-left: 2px; margin-right: 2px; margin-top: 2px; margin-bottom: 2px; background-color: rgb(55, 55, 55);">
+        <Style src="/Assets/Louis8257/CheatSheets/Editor/Resources/CheatSheets/Core/Styles.uss" />
+        <ui:VisualElement name="Header" style="flex-grow: 0; height: 25px; flex-direction: row; flex-shrink: 0;">
+            <ui:TextField picking-mode="Ignore" name="SearchBar" usage-hints="None" style="flex-grow: 1; border-top-left-radius: 2px; border-bottom-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0;">
+                <ui:Label text="Search keywords..." name="SearchBarHint" style="position: absolute; -unity-font-style: italic; font-size: 12px; -unity-text-align: middle-left; padding-left: 5px; padding-right: 0; justify-content: center; align-items: stretch; color: rgb(113, 113, 113); top: 0; left: 0; flex-grow: 1; bottom: 1px;" />
+            </ui:TextField>
+            <ui:Button text="+" tooltip="Create a new cheat sheet!" name="CreateBtn" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 1px; border-bottom-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; font-size: 15px; -unity-text-align: middle-center; -unity-font-style: bold; background-color: rgba(93, 93, 93, 0); -unity-background-image-tint-color: rgb(255, 255, 255); color: rgb(128, 128, 128);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Separator" style="flex-shrink: 0; margin-left: 2px; margin-right: 2px;" />
+        <ui:ScrollView name="ScrollView" show-horizontal-scroller="false" show-vertical-scroller="true" vertical-page-size="20" style="flex-grow: 1; flex-shrink: 1; height: auto; min-width: auto; min-height: auto;" />
+    </ui:VisualElement>
+</ui:UXML>

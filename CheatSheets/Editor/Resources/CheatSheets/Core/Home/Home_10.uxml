@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd"
+>
+    <engine:VisualElement name="Root">
+        <Style src="HomeStyles.uss"/>
+
+        <engine:Label class="BigTitle" text="Welcome!"/>
+        <engine:Label class="NiceText" text="Thank you for using Cheat Sheets!"/>
+        <engine:Label class="NiceText" text="This was brought to you by Louis-Pierre Aubert, downloaded from GitHub."/>
+        <engine:Label class="NiceText" text="To see a cheat sheet, click on the button at the top of this window."/>
+
+        <engine:Label class="BigTitle" text="How does it works?"/>
+        <engine:Label class="NiceText" text="Cheat Sheets uses mainly reflections to detect new sheets and Unity's UIElements to diplay the sheet."/>
+
+        <engine:Label class="BigTitle" text="How to create a new cheat sheet?"/>
+        <engine:Label class="NiceText" text="You can find the option by opening the selector, then press the + sign and a wizard will pop on. Just follow its instructions and you're good to go!'"/>
+
+    </engine:VisualElement>
+</engine:UXML>

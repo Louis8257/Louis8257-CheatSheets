@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="Root">
+        <Style src="Styles.uss" />
+        <ui:VisualElement name="Header">
+            <ui:Button name="CheatSheetSelectorBtn" text="Placeholder" class="Flexed" />
+            <ui:VisualElement name="Arrows">
+                <ui:Button name="PreviousCheatSheetBtn" text="Previous" class="Flexed" style="flex-shrink: 0; flex-direction: row; width: 25%;" />
+                <ui:Label text="Page #/#" name="PageNumberLabel" style="-unity-text-align: middle-center; justify-content: center; align-items: center; padding-left: 0; padding-right: 0; flex-grow: 1; width: 25%; flex-shrink: 0; flex-direction: row;" />
+                <ui:Button name="NextCheatSheetBtn" text="Next" class="Flexed" style="flex-shrink: 0; width: 25%;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Separator" />
+        <ui:ScrollView name="ScrollView" class="Flexed" />
+    </ui:VisualElement>
+</ui:UXML>

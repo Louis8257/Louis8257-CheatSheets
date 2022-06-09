@@ -1,0 +1,42 @@
+﻿.MainTitle {
+	-unity-font-style: bold;
+	font-size: 20px;
+	white-space: normal;
+	-unity-text-align: middle-center;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+.SectionTitle {
+	-unity-font-style: bold;
+	font-size: 16px;
+	white-space: normal;
+	-unity-text-align: middle-left;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 10px;
+}
+
+.BodyText {
+	white-space: normal;
+	margin: 5px;
+	margin-left: 15px;
+}
+
+.ItalicBodyText {
+	white-space: normal;
+	margin: 5px;
+	margin-left: 15px;
+	-unity-font-style: italic;
+}
+
+.BoldBodyText {
+	white-space: normal;
+	margin: 5px;
+	margin-left: 15px;
+	-unity-font-style: bold;
+}
+
+.Space {
+	height: 10px;
+}

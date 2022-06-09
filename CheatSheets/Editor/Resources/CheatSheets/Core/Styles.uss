@@ -1,0 +1,22 @@
+#Header {
+    padding-top: 3px;
+}
+
+#Arrows {
+    display: flex;
+    flex-direction: row;
+}
+
+#Separator {
+    margin: 5px;
+    height: 2px;
+    background-color: rgb(30, 30, 30);
+}
+
+#FoldoutContainer {
+    padding: 2px;
+}
+
+.Flexed {
+    flex-grow: 1;
+}

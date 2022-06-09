@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd"
+>
+
+     <engine:Label text="This cheat sheet was created automatically by the &quot;Cheat Sheets&quot; plugin!"
+ style="flex-grow: 0;
+ flex-shrink: 1;
+ flex-wrap: wrap;
+ -unity-font-style: bold;
+ font-size: 14px;
+ -unity-text-align: upper-center;
+ white-space: normal;
+ padding: 5px;" />
+
+    <engine:Label text="Feel free to modify it with the UI Builder in Window &gt; UI &gt; UI Builder or by opening this UXML file."
+ style="-unity-text-align: upper-center;
+ white-space: normal;
+ margin-top: 10px;
+ padding: 5px;" />
+
+</engine:UXML>

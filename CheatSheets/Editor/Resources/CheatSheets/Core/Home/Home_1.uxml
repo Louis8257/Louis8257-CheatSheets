@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd"
+>
+    <engine:VisualElement name="Root">
+        <Style src="HomeStyles.uss"/>
+
+        <engine:Label class="MainTitle" text="Welcome!"/>
+        <engine:Label class="BodyText" text="Thank you for using Cheat Sheets!"/>
+        <engine:Label class="BodyText" text="This was brought to you by Louis-Pierre Aubert, downloaded from GitHub."/>
+        <engine:Label class="BodyText" text="To see a cheat sheet, click on the button at the top of this window."/>
+
+        <engine:VisualElement class="Space"/>
+        <engine:Label class="ItalicBodyText" text="Click on the Next button to change page."/>
+
+    </engine:VisualElement>
+</engine:UXML>

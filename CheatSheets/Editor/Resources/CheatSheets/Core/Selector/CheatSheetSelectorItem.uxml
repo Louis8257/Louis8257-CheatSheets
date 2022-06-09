@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement style="background-color: rgba(0, 0, 0, 0); border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;">
+        <Style src="/Assets/Louis8257/CheatSheets/Editor/Resources/CheatSheets/Core/Styles.uss" />
+        <ui:Button name="Root" style="height: 30px; flex-direction: row;">
+            <ui:VisualElement name="ColorMark" style="background-color: rgb(255, 255, 255); width: 5px; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; margin-left: 2px; margin-right: 2px; margin-top: 2px; margin-bottom: 2px;" />
+            <ui:Label text="Placeholder" name="Title" style="flex-grow: 1; -unity-text-align: middle-left; padding-left: 5px; padding-top: 5px; padding-bottom: 5px; padding-right: 5px; flex-wrap: nowrap; white-space: normal; flex-shrink: 1;" />
+            <ui:Label text="Page #" name="PageNumber" style="flex-grow: 1; -unity-text-align: middle-right; padding-left: 5px; padding-top: 5px; padding-bottom: 5px; padding-right: 5px; position: relative; width: auto; -unity-font-style: normal;" />
+        </ui:Button>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,6 @@
+﻿using CheatSheets;
+
+{0}
+class {1}CheatSheet : CheatSheetElement {
+
+}

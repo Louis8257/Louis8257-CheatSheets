@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:Foldout text="PlaceHolder" value="false" name="Root" style="height: auto; background-color: rgba(96, 96, 96, 0.31); border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; font-size: 12px; margin-left: 2px; margin-right: 2px; margin-top: 2px; margin-bottom: 2px; padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px;">
+        <Style src="/Assets/Louis8257/CheatSheets/Editor/Resources/CheatSheets/Core/Styles.uss" />
+    </ui:Foldout>
+</ui:UXML>
