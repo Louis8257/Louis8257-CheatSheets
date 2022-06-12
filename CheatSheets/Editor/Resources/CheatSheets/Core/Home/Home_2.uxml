@@ -30,9 +30,9 @@
 
         <engine:Label class="SectionTitle" text="Creator"/>
         <engine:Label class="BodyText" text="To avoid to rewrite the same scripts and UXML resources again, you can use this tool! You can create several cheat sheets and pages. Pages are linked to the cheat sheet script automatically."/>
-        <engine:Label class="BodyText" text="You can open the creator by clicking on the + button at the right top corner in the Selector window."/>
+        <engine:Label class="BodyText" text="You can open the creator by clicking on the '+' button at the right top corner in the Selector window."/>
 
-        <engine:Button name="TestBtn" text="Test"/>
+        <engine:VisualElement class="PageEndSpace"/>
 
     </engine:VisualElement>
 </engine:UXML>

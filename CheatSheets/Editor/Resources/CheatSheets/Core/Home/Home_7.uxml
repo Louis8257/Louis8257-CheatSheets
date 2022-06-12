@@ -8,16 +8,15 @@
     <engine:VisualElement name="Root">
         <Style src="HomeStyles.uss"/>
 
-        <engine:Label class="BigTitle" text="Welcome!"/>
-        <engine:Label class="NiceText" text="Thank you for using Cheat Sheets!"/>
-        <engine:Label class="NiceText" text="This was brought to you by Louis-Pierre Aubert, downloaded from GitHub."/>
-        <engine:Label class="NiceText" text="To see a cheat sheet, click on the button at the top of this window."/>
+        <engine:Label class="MainTitle" text="Share Your Cheat Sheets"/>
+        <engine:Label class="BodyText"  text="The main goal of this plugin is to allow users to access information freely and fast. Don't hesitate to share your cheat sheets on any websites! You may need to use the GitHub link of this plugin so your readers can read it."/>
 
-        <engine:Label class="BigTitle" text="How does it works?"/>
-        <engine:Label class="NiceText" text="Cheat Sheets uses mainly reflections to detect new sheets and Unity's UIElements to diplay the sheet."/>
+        <engine:Label class="SectionTitle" text="Conditions"/>
+        <engine:Label class="BodyText"     text="This plugin is published under the Creative Commons Zero v1.0 Universal licence. You are allowed to share it or sell your cheat sheets with your plugins with any modifications, even without my authorization or credits!"/>
 
-        <engine:Label class="BigTitle" text="How to create a new cheat sheet?"/>
-        <engine:Label class="NiceText" text="You can find the option by opening the selector, then press the + sign and a wizard will pop on. Just follow its instructions and you're good to go!'"/>
+        <engine:Label class="SectionTitle" text="Links"/>
+        <engine:Button name="GitHubLinkBtn" text="Project Repository"                tooltip="Opens the GitHub project in your browser."/>
+        <engine:Button name="CcZeroLinkBtn" text="See Creative Commons Zero Licence" tooltip="Opens https://creativecommons.org/publicdomain/zero/1.0/"/>
 
     </engine:VisualElement>
 </engine:UXML>

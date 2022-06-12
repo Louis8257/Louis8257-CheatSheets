@@ -61,6 +61,10 @@ namespace CheatSheets {
         /// </summary>
         public virtual void OnGUI () { }
 
+        public virtual bool RequiresConstantRepaint () {
+            return false;
+        }
+
         public VisualElement CloneTree ( CheatSheetWindow window ) {
             if ( this._rootVisualElement != null ) {
                 this.OnDisable();

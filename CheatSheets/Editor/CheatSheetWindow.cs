@@ -96,6 +96,10 @@ namespace CheatSheets {
 
             if ( this.selectedPage != null && this.selectedPage.element._rootVisualElement != null ) {
                 this.selectedPage.element.OnGUI();
+
+                if ( this.selectedPage.element.RequiresConstantRepaint() ) {
+                    this.Repaint();
+                }
             }
         }
 

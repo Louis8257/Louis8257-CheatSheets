@@ -8,16 +8,57 @@
     <engine:VisualElement name="Root">
         <Style src="HomeStyles.uss"/>
 
-        <engine:Label class="BigTitle" text="Welcome!"/>
-        <engine:Label class="NiceText" text="Thank you for using Cheat Sheets!"/>
-        <engine:Label class="NiceText" text="This was brought to you by Louis-Pierre Aubert, downloaded from GitHub."/>
-        <engine:Label class="NiceText" text="To see a cheat sheet, click on the button at the top of this window."/>
+        <engine:Label class="MainTitle" text="Mindset"/>
 
-        <engine:Label class="BigTitle" text="How does it works?"/>
-        <engine:Label class="NiceText" text="Cheat Sheets uses mainly reflections to detect new sheets and Unity's UIElements to diplay the sheet."/>
+        <engine:Label class="BodyText" text="Before creating your cheat sheets, you should follow some common rules to keep consistency and efficiency so the users can read thousands of different cheat sheets with ease."/>
 
-        <engine:Label class="BigTitle" text="How to create a new cheat sheet?"/>
-        <engine:Label class="NiceText" text="You can find the option by opening the selector, then press the + sign and a wizard will pop on. Just follow its instructions and you're good to go!'"/>
+        <engine:Label class="SectionTitle"   text="Size"/>
+        <engine:Label class="ItalicBodyText" text="The simplest ones are often the best."/>
+        <engine:Label class="BodyText"       text="Your cheat sheet should talk about a simple subject that talks about a spefic feature the most informative way in few lines."/>
+        <engine:Label class="BodyText"       text="Your cheat sheet should not exceed one scroll (the user should see the whole information in the first glance)."/>
+        <engine:Label class="BoldBodyText"   text="Don't forget you can use multiple pages! You can divide the information into several pages."/>
+        <engine:Label class="ItalicBodyText" text="You can include sources if you can't fit the whole information in one page."/>
 
+        <engine:Label class="SectionTitle" text="Text"/>
+        <engine:Label class="BodyText"     text="The text must be the most informative and accurate as possible."/>
+        <engine:Label class="BodyText"     text="Sources gives credibility to your information. This allows to check the accuracy of this information. It also gives credit to the author if you have just copy-pasted."/>
+        <engine:Label class="BoldBodyText" text="Don't go off topic! You can talk about another subject in a separated page."/>
+        <engine:Label class="BodyText"     text="English is the prefered language, so a maximum of people can understand you."/>
+        <engine:Label class="BoldBodyText" text="The text must be readable! The color of the text must be different from the background's color."/>
+
+        <engine:Label class="SectionTitle" text="Presentation"/>
+        <engine:Label class="BodyText"     text="Your cheat sheets will be displayed inside the editor, you can adapt your text so it can fit in the window and use white color on grey background (the default background of the editor)."/>
+        <engine:Label class="BodyText"     text="Act like you are writing on paper! Put a 10px margin on the left, 12px font for your text and a bigger one for your titles and spaces between paragraphs."/>
+        <engine:Label class="BoldBodyText" text="Use font styles! This will help the user to find information faster. For now you can assign a style on an VisualElement only. Rich text may be supported in the future. Each style have a meaning:"/>
+        <engine:VisualElement class="List">
+            <engine:VisualElement class="ListItem">
+                <engine:Label class="ListItemTitle" text="Normal Style"/>
+                <engine:Label class="ListItemBody"  text="The standard font. It represents the information."/>
+            </engine:VisualElement>
+
+            <engine:VisualElement class="ListItem">
+                <engine:Label class="ListItemTitle"    text="Bold Style"/>
+                <engine:Label class="ListItemBoldBody" text="Means something to be careful of. If the text is red or a red background, it intensifies its importance."/>
+            </engine:VisualElement> 
+
+            <engine:VisualElement class="ListItem">
+                <engine:Label class="ListItemTitle"      text="Italic style"/>
+                <engine:Label class="ListItemItalicBody" text="Italic font means a complementary information or a quote. This information is not crucial, but still useful. Can also be used as a reminder."/>
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:Label class="BodyText" text="Use a list to enumerate or decompose the information."/>
+
+
+        <engine:Label class="SectionTitle"   text="Images"/>
+        <engine:Label class="ItalicBodyText" text="A picture is worth a thousand words."/>
+        <engine:Label class="BodyText"       text="Use pictures to illustrate your information. Just like for the text, it must be readable and understandable."/>
+        <engine:Label class="BodyText"       text="When done correcty, it's possible to condensate the whole information in one picture only."/>
+        <engine:Label class="BodyText"       text="You can also use sheets, diagrams or even drawing in the scene view if needed!"/>
+
+        <engine:VisualElement class="Space"/>
+
+        <engine:Label class="BoldBodyText" text="And last but not least: be yourself when writing your cheat sheet!"/>
+
+        <engine:VisualElement class="PageEndSpace"/>
     </engine:VisualElement>
 </engine:UXML>

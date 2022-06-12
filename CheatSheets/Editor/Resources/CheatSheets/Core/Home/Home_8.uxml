@@ -8,16 +8,39 @@
     <engine:VisualElement name="Root">
         <Style src="HomeStyles.uss"/>
 
-        <engine:Label class="BigTitle" text="Welcome!"/>
-        <engine:Label class="NiceText" text="Thank you for using Cheat Sheets!"/>
-        <engine:Label class="NiceText" text="This was brought to you by Louis-Pierre Aubert, downloaded from GitHub."/>
-        <engine:Label class="NiceText" text="To see a cheat sheet, click on the button at the top of this window."/>
+        <engine:Label class="MainTitle" text="Credits And Contacts"/>
+        <engine:Label class="BodyText"  text="Cheat Sheets for Unity Editor by Louis-Pierre Aubert, downloaded from GitHub since June 2022."/>
 
-        <engine:Label class="BigTitle" text="How does it works?"/>
-        <engine:Label class="NiceText" text="Cheat Sheets uses mainly reflections to detect new sheets and Unity's UIElements to diplay the sheet."/>
+        <engine:Label class="SectionTitle" text="Contacts"/>
+        <engine:VisualElement class="List">
+            <engine:VisualElement class="ListItem">
+                <engine:Label class="ListItemTitle" text="E-mail"/>
+                <engine:Label class="ListItemBody"  text="louis.8257@hotmail.com"/>
+            </engine:VisualElement>
 
-        <engine:Label class="BigTitle" text="How to create a new cheat sheet?"/>
-        <engine:Label class="NiceText" text="You can find the option by opening the selector, then press the + sign and a wizard will pop on. Just follow its instructions and you're good to go!'"/>
+            <engine:VisualElement class="ListItem">
+                <engine:Label class="ListItemTitle" text="Website"/>
+                <engine:Label class="ListItemBody"  text="louis8257.com"/>
+            </engine:VisualElement>
+        </engine:VisualElement>
 
+        <engine:Label class="SectionTitle" text="Softwares Used"/>
+        <engine:VisualElement class="List">
+            <engine:VisualElement class="ListItem">
+                <engine:Label class="ListItemTitle" text="Programmation"/>
+                <engine:Label class="ListItemBody"  text="Microsoft Visual Studio Community 2019"/>
+            </engine:VisualElement>
+
+            <engine:VisualElement class="ListItem">
+                <engine:Label class="ListItemTitle" text="Screenshots"/>
+                <engine:Label class="ListItemBody"  text="From Microsoft Visual Studio Community 2019"/>
+            </engine:VisualElement>
+
+            <engine:VisualElement class="ListItem">
+                <engine:Label class="ListItemTitle" text="Documentation"/>
+                <engine:Label class="ListItemBody"  text="Unity Engine's UIElements for the built-in Documentation"/>
+                <engine:Label class="ListItemBody"  text="External documentation made with LibreOffice Version 6.2.3.2 (x64)"/>
+            </engine:VisualElement>
+        </engine:VisualElement>
     </engine:VisualElement>
 </engine:UXML>

@@ -23,13 +23,6 @@
 	margin-left: 15px;
 }
 
-.ItalicBodyText {
-	white-space: normal;
-	margin: 5px;
-	margin-left: 15px;
-	-unity-font-style: italic;
-}
-
 .BoldBodyText {
 	white-space: normal;
 	margin: 5px;
@@ -37,6 +30,64 @@
 	-unity-font-style: bold;
 }
 
+.ItalicBodyText {
+	white-space: normal;
+	margin: 5px;
+	margin-left: 15px;
+	-unity-font-style: italic;
+}
+
 .Space {
 	height: 10px;
+}
+
+.PageEndSpace {
+	height: 50px;
+}
+
+.List {
+	margin-left: 10px;
+}
+
+.ListItem {
+	margin: 7px;
+	margin-left: 15px;
+}
+
+.ListItemTitle {
+	white-space: normal;
+	-unity-font-style: bold;
+}
+
+.ListItemBody {
+	white-space: normal;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.ListItemBoldBody {
+	white-space: normal;
+	margin-top: 5px;
+	margin-left: 5px;
+	-unity-font-style: bold;
+}
+
+.ListItemItalicBody {
+	white-space: normal;
+	margin-top: 5px;
+	margin-left: 5px;
+	-unity-font-style: italic;
+}
+
+.ImageFrame {
+	align-items: center;
+}
+
+.Image_AttributeLine {
+	background-image: resource("CheatSheets/Core/Home/images/cheatSheets_attributeLine");
+	width: 430px;
+	height: 43px;
+	flex-shrink: 0;
+	flex-grow: 0;
+	margin: 5px;
 }

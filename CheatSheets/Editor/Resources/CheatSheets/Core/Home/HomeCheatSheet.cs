@@ -8,38 +8,67 @@ using UnityEngine;
 using UnityEngine.UIElements;
 
 namespace CheatSheets {
+
     [CustomCheatSheet("Cheat Sheets Documentation/#1 Introduction",                "CheatSheets/Core/Home/Home_1",
         keywords = new string[]{"Welcome", "Pages", "Buttons"})]
     [CustomCheatSheet("Cheat Sheets Documentation/#2 How does it works",           "CheatSheets/Core/Home/Home_2",
         keywords = new string[] {"Pages", "Life Cycle", "Tree", "Buttons", "Custom Attributes", "Serialization", "Keywords", "Styles", "UXML"})]
-    [CustomCheatSheet("Cheat Sheets Documentation/#3 Custom Attribute",            "CheatSheets/Core/Home/Home_3",
+    [CustomCheatSheet("Cheat Sheets Documentation/#3 Script & Custom Attribute", "CheatSheets/Core/Home/Home_3",
         keywords = new string[] { "Cheat Sheet", "Pages", "Tree", "Sections", "Serialization", "Keywords", "UXML"})]
-    [CustomCheatSheet("Cheat Sheets Documentation/#4 Sections",                    "CheatSheets/Core/Home/Home_4",
-        keywords = new string[] { "Tree", "Colors", "Search Engine", "Pages", "Items", "Ergonomy" })]
-    [CustomCheatSheet("Cheat Sheets Documentation/#5 Page Numbers",                "CheatSheets/Core/Home/Home_5",
-        keywords = new string[] { "Ergonomy", "Pages", "Items", "Buttons" })]
-    [CustomCheatSheet("Cheat Sheets Documentation/#6 Mindset",                     "CheatSheets/Core/Home/Home_6",
+    [CustomCheatSheet("Cheat Sheets Documentation/#4 Mindset",                     "CheatSheets/Core/Home/Home_4",
         keywords = new string[] { "Share", "Open source", "Documentation" })]
-    [CustomCheatSheet("Cheat Sheets Documentation/#7 Create A Cheat Sheet",        "CheatSheets/Core/Home/Home_7",
+    [CustomCheatSheet("Cheat Sheets Documentation/#5 Create A Cheat Sheet",        "CheatSheets/Core/Home/Home_5",
         keywords = new string[] {"Pages", "Cheat Sheet", "Custom Attributes", "Scripts", "Documentation", "Styles", "UXML"})]
-    [CustomCheatSheet("Cheat Sheets Documentation/#8 Using UI Builder",            "CheatSheets/Core/Home/Home_8",
+    [CustomCheatSheet("Cheat Sheets Documentation/#6 Using UI Builder",            "CheatSheets/Core/Home/Home_6",
         keywords = new string[] {"Window", "User Friendly", "UXML"})]
-    [CustomCheatSheet("Cheat Sheets Documentation/#9 Create Several Cheat Sheets", "CheatSheets/Core/Home/Home_9",
-        keywords = new string[] {"Automation", "Pages", "Custom Attributes", "Scripts"})]
-    [CustomCheatSheet("Cheat Sheets Documentation/#10 Share your cheat sheets",    "CheatSheets/Core/Home/Home_10",
+    [CustomCheatSheet("Cheat Sheets Documentation/#7 Share your cheat sheets",    "CheatSheets/Core/Home/Home_7",
         keywords = new string[] {"Open Source", "Share", "Mindset", "Documentation", "GitHub", "Asset Store"})]
-    [CustomCheatSheet("Cheat Sheets Documentation/#11 Credits & Contacts",         "CheatSheets/Core/Home/Home_11",
+    [CustomCheatSheet("Cheat Sheets Documentation/#8 Credits & Contacts",         "CheatSheets/Core/Home/Home_8",
         keywords = new string[] {"Louis8257", "Louis-Pierre Aubert", "louis.8257@hotmail.com"})]
     public class HomeCheatSheet : CheatSheetElement {
 
         Button testBtn;
+
+        enum Page {
+            Introduction        = 1,
+            HowDoesItWorks      = 2,
+            ScriptAndAttributes = 3,
+            Mindset             = 4,
+            CreateCheatSheet    = 5,
+            UIBuilder           = 6,
+            Share               = 7,
+            Credits             = 8
+        }
 
         public override void OnEnable () {
             this.testBtn = this.rootVisualElement.Q<Button>("TestBtn");
             if ( this.testBtn != null ) {
                 this.testBtn.clicked += () => { this.window.selectedPage = this.window.stack.loadedAttributes[0]; };
             }
+
+            Page index = (Page)this.attribute.pageNumber;
+            switch ( index ) {
+                case Page.Share: OnEnablePage7(); break;
+            }
+
         }
 
+        #region "Page 7"
+        void OnEnablePage7 () {
+            Button gitHubLinkBtn = this.rootVisualElement.Q<Button>("GitHubLinkBtn");
+            Button ccZeroLinkBtn = this.rootVisualElement.Q<Button>("CcZeroLinkBtn");
+
+            gitHubLinkBtn.clicked += GitHubLinkBtn_clicked;
+            ccZeroLinkBtn.clicked += CcZeroLinkBtn_clicked;
+        }
+
+        private void GitHubLinkBtn_clicked () {
+            //Application.OpenURL();
+        }
+
+        private void CcZeroLinkBtn_clicked () {
+            Application.OpenURL("https://creativecommons.org/publicdomain/zero/1.0/");
+        }
+        #endregion
     }
 }

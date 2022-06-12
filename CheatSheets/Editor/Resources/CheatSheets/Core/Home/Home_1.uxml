@@ -16,5 +16,7 @@
         <engine:VisualElement class="Space"/>
         <engine:Label class="ItalicBodyText" text="Click on the Next button to change page."/>
 
+        <engine:VisualElement class="PageEndSpace"/>
+
     </engine:VisualElement>
 </engine:UXML>
