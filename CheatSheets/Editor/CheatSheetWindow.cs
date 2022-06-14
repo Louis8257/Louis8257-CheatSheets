@@ -8,12 +8,22 @@ namespace CheatSheets {
 
         const string UXML_RESOURCE_PATH = "CheatSheets/Core/CheatSheetWindow";
 
+        /// <summary>
+        /// <para>You can read the stack if you want to get a specific page.</para>
+        /// <para><b>You should never write or modify data in this variable.</b></para>
+        /// </summary>
         [SerializeField]
         internal CheatSheetStack stack = new CheatSheetStack();
 
+        /// <summary>
+        /// <para><i>For serialization.</i></para>
+        /// </summary>
         [SerializeField]
         internal CustomCheatSheetAttribute _selectedPage;
 
+        /// <summary>
+        /// <para>Once changed, will display the newly selected page.</para>
+        /// </summary>
         public CustomCheatSheetAttribute selectedPage {
             get {
                 return this._selectedPage;

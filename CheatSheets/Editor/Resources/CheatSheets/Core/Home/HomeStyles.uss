@@ -1,4 +1,8 @@
-﻿.MainTitle {
+﻿.AllignInRow {
+	flex-direction: row;
+}
+
+.MainTitle {
 	-unity-font-style: bold;
 	font-size: 20px;
 	white-space: normal;
@@ -45,6 +49,15 @@
 	height: 50px;
 }
 
+.MiniButtonContainer {
+	flex-shrink: 1;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	margin: 10px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
 .List {
 	margin-left: 10px;
 }
@@ -79,6 +92,17 @@
 	-unity-font-style: italic;
 }
 
+.Rectangle {
+	margin-right: 3px;
+	border-width: 2px;
+	background-color: rgba(0, 0, 0, 0)
+	width: 25px;
+	min-width: 25px;
+	max-width: 25px;
+	height: 15px;
+	flex-shrink: 0
+}
+
 .ImageFrame {
 	align-items: center;
 }
@@ -87,6 +111,24 @@
 	background-image: resource("CheatSheets/Core/Home/images/cheatSheets_attributeLine");
 	width: 430px;
 	height: 43px;
+	flex-shrink: 0;
+	flex-grow: 0;
+	margin: 5px;
+}
+
+.Image_AccessCreatorWizard {
+	background-image: resource("CheatSheets/Core/Home/images/cheatSheets_accessCreatorWizard");
+	width: 430px;
+	height: 90px;
+	flex-shrink: 0;
+	flex-grow: 0;
+	margin: 5px;
+}
+
+.Image_CreatorWizard {
+	background-image: resource("CheatSheets/Core/Home/images/cheatSheets_creatorWizard");
+	width: 350px;
+	height: 350px;
 	flex-shrink: 0;
 	flex-grow: 0;
 	margin: 5px;

@@ -8,16 +8,42 @@
     <engine:VisualElement name="Root">
         <Style src="HomeStyles.uss"/>
 
-        <engine:Label class="BigTitle" text="Welcome!"/>
-        <engine:Label class="NiceText" text="Thank you for using Cheat Sheets!"/>
-        <engine:Label class="NiceText" text="This was brought to you by Louis-Pierre Aubert, downloaded from GitHub."/>
-        <engine:Label class="NiceText" text="To see a cheat sheet, click on the button at the top of this window."/>
+        <engine:Label class="MainTitle" text="Using UI Builder"/>
+        <engine:Label class="BodyText"       text="After creating the script file and the UXML file, you can use the UI Builder already provided in the newest versions of Unity!"/>
+        <engine:Label class="ItalicBodyText" text="For versions prior to Unity 2021, you need to download a package. See the button below."/>
 
-        <engine:Label class="BigTitle" text="How does it works?"/>
-        <engine:Label class="NiceText" text="Cheat Sheets uses mainly reflections to detect new sheets and Unity's UIElements to diplay the sheet."/>
+        <engine:Label class="SectionTitle" text="Installation"/>
+        <engine:Button name="UiBuilderInstallDocBtn" text="How to install UI Builder" tooltip="Opens https://docs.unity3d.com/Packages/com.unity.ui.builder@1.0/manual/index.html"/>
 
-        <engine:Label class="BigTitle" text="How to create a new cheat sheet?"/>
-        <engine:Label class="NiceText" text="You can find the option by opening the selector, then press the + sign and a wizard will pop on. Just follow its instructions and you're good to go!'"/>
+        <engine:Label class="SectionTitle" text="Overview"/>
+        <engine:Label class="BodyText" text="The UI Builder's window is divided into three columns from left to right, respectively:"/>
 
+        <engine:VisualElement class="List">
+            <engine:VisualElement class="ListItem">
+                <engine:Label class="ListItemTitle" text="StyleSheets, Hierarchy and Library"/>
+                <engine:Label class="ListItemBody" text="Regroups every UI elements related data. The style sheet can be applied to any individual elements. The hierarchy works the same way as the scene hierarchy. The library lists every loaded UI elements, including custom ones."/>
+            </engine:VisualElement>
+            <engine:VisualElement class="ListItem">
+                <engine:Label class="ListItemTitle" text="Viewport and Code Preview"/>
+                <engine:Label class="ListItemBody" text="Displays the content of the opened UXML file as UI elements. You can interact with them in the Preview mode."/>
+                <engine:Label class="ListItemBody" text="You can also modify the source UXML file and this view will update with the new data."/>
+                <engine:Label class="ListItemBody" text="It also show a preview of the UXML and USS code below the viewport. Useful if you want to experiment."/>
+                </engine:VisualElement>
+            <engine:VisualElement class="ListItem">
+                <engine:Label class="ListItemTitle" text="Inspector"/>
+                <engine:Label class="ListItemBody"       text="Just like the classic Inspector, it will show modifiable properties of the selected element."/>
+                <engine:Label class="ListItemItalicBody" text="Multiselection is not supported yet."/>
+            </engine:VisualElement>
+        </engine:VisualElement>
+
+        <engine:Label class="SectionTitle" text="Modify UXML file"/>
+        <engine:Label class="BodyText" text="To modify your UXML file, click on the 'File' button in the upper-left corner of the viewport or click on your file in the 'Project' tab. You should see the rendered visual tree with the UI elements now."/>
+        <engine:Label class="BodyText" text="Once you opened the file, you can place any UI elements in the viewport."/>
+
+        <engine:Label class="SectionTitle" text="Limitations And Bugs"/>
+        <engine:Label class="BodyText" text="For long UI elements, the flex may clip through other VisualElement underneath it. Be sure to expand the preview window to fix this problem."/>
+        <engine:Label class="BodyText" text="The interactive part is not a standard Unity feature and, therefore, not functional in the UI Builder's preview mode."/>
+
+        <engine:VisualElement class="PageEndSpace"/>
     </engine:VisualElement>
 </engine:UXML>

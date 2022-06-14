@@ -48,10 +48,35 @@ namespace CheatSheets {
 
             Page index = (Page)this.attribute.pageNumber;
             switch ( index ) {
-                case Page.Share: OnEnablePage7(); break;
+                case Page.CreateCheatSheet: OnEnablePage5(); break;
+                case Page.UIBuilder:        OnEnablePage6(); break;
+                case Page.Share:            OnEnablePage7(); break;
             }
-
         }
+
+        #region "Page 5"
+        void OnEnablePage5 () {
+            Button goToPage3Btn = this.rootVisualElement.Q<Button>("GoToPage3Btn");
+
+            goToPage3Btn.clicked += GoToPage3Btn_clicked;
+        }
+
+        void GoToPage3Btn_clicked () {
+            this.window.selectedPage = this.window.stack.loadedAttributes.Find(o => o.pageNumber == 3);
+        }
+        #endregion
+
+        #region "Page 6"
+        void OnEnablePage6 () {
+            Button uiBuilderInstallDocBtn = this.rootVisualElement.Q<Button>("UiBuilderInstallDocBtn");
+
+            uiBuilderInstallDocBtn.clicked += UiBuilderInstallDocBtn_clicked;
+        }
+
+        private void UiBuilderInstallDocBtn_clicked () {
+            Application.OpenURL("https://docs.unity3d.com/Packages/com.unity.ui.builder@1.0/manual/index.html");
+        }
+        #endregion
 
         #region "Page 7"
         void OnEnablePage7 () {

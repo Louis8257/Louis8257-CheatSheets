@@ -42,5 +42,7 @@
                 <engine:Label class="ListItemBody"  text="External documentation made with LibreOffice Version 6.2.3.2 (x64)"/>
             </engine:VisualElement>
         </engine:VisualElement>
+
+        <engine:VisualElement class="PageEndSpace"/>
     </engine:VisualElement>
 </engine:UXML>

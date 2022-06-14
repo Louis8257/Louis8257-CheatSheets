@@ -18,5 +18,6 @@
         <engine:Button name="GitHubLinkBtn" text="Project Repository"                tooltip="Opens the GitHub project in your browser."/>
         <engine:Button name="CcZeroLinkBtn" text="See Creative Commons Zero Licence" tooltip="Opens https://creativecommons.org/publicdomain/zero/1.0/"/>
 
+        <engine:VisualElement class="PageEndSpace"/>
     </engine:VisualElement>
 </engine:UXML>
