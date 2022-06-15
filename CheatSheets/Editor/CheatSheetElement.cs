@@ -82,7 +82,7 @@ namespace CheatSheets {
 
     /// <summary>
     /// <para>An attribute to define cheat sheets linked to this class.</para>
-    /// <para>You can also create multiple <see cref="CustomCheatSheetAttribute"/>!</para>
+    /// <para>You can also create multiple <see cref="CustomCheatSheetAttribute"/>.</para>
     /// </summary>
     [Serializable]
     [System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple = true, Inherited = true)]
@@ -93,7 +93,7 @@ namespace CheatSheets {
 
         /// <summary>
         /// <para>The path in the <see cref="CheatSheetTree"/>.</para>
-        /// <para><b>Doesn't contain the page number!</b></para>
+        /// <para><b>Doesn't contain the page number and page name!</b></para>
         /// </summary>
         public string cheatSheetPath;
 

@@ -10,7 +10,7 @@ namespace CheatSheets {
 
         /// <summary>
         /// <para>You can read the stack if you want to get a specific page.</para>
-        /// <para><b>You should never write or modify data in this variable.</b></para>
+        /// <para><b>You should never need to write or modify data in this variable.</b></para>
         /// </summary>
         [SerializeField]
         internal CheatSheetStack stack = new CheatSheetStack();

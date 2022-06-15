@@ -35,13 +35,13 @@ namespace CheatSheets.Creator {
 
         public List<CheatSheetPage> pages = new List<CheatSheetPage>();
 
+        public CheatSheet() { }
+
         public CheatSheet ( CheatSheet original ) {
             this.useNameAsSection.SetValue(original.useNameAsSection.GetValue());
             this.useNameInPageName.SetValue(original.useNameInPageName.GetValue());
             this.resourcePath.SetValue(original.resourcePath.GetValue());
         }
-
-        public CheatSheet () { }
 
         public override void RegenerateVisualElement () {
             if ( CheatSheet.asset == null ) {

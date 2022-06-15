@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 
 namespace CheatSheets.Creator {
-    internal class CheatSheetCreator : EditorWindow {
+    internal sealed class CheatSheetCreator : EditorWindow {
 
         const string UXML_RESOURCE_PATH = "CheatSheets/Core/Creator/CheatSheetCreator";
 
@@ -17,9 +17,6 @@ namespace CheatSheets.Creator {
 
         Button createBtn;
 
-        /// <summary>
-        /// TODO: Make it reorderable.
-        /// </summary>
         [SerializeField]
         List<CheatSheet> cheatSheets = new List<CheatSheet>();
 
@@ -58,7 +55,7 @@ namespace CheatSheets.Creator {
         }
 
 
-        private void OnGUI () {
+        void OnGUI () {
             this.scrollView.style.height = this.position.height;
         }
 

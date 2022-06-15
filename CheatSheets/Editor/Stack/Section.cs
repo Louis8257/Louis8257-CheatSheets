@@ -19,7 +19,7 @@ namespace CheatSheets.Stack {
             this.name = name;
         }
 
-        internal Section GetSection ( string sectionName ) {
+        public Section GetSection ( string sectionName ) {
             Section res = null;
             foreach ( Section subSection in this.subSections ) {
                 if ( subSection.name.Equals(sectionName) ) {

@@ -9,7 +9,7 @@
         <Style src="HomeStyles.uss"/>
 
         <engine:Label class="MainTitle" text="Share Your Cheat Sheets"/>
-        <engine:Label class="BodyText"  text="The main goal of this plugin is to allow users to access information freely and fast. Don't hesitate to share your cheat sheets on any websites! You may need to use the GitHub link of this plugin so your readers can read it."/>
+        <engine:Label class="BodyText"  text="The main goal of this plugin is to allow users to access information freely and fast. Don't hesitate to share your cheat sheets on the Internet! You may need to use the GitHub link of this plugin so your readers can read it."/>
 
         <engine:Label class="SectionTitle" text="Conditions"/>
         <engine:Label class="BodyText"     text="This plugin is published under the Creative Commons Zero v1.0 Universal licence. You are allowed to share it or sell your cheat sheets with your plugins with any modifications, even without my authorization or credits!"/>

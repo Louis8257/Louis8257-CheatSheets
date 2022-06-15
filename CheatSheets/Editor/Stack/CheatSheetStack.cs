@@ -24,8 +24,7 @@ namespace CheatSheets.Stack {
         internal List<CustomCheatSheetAttribute> loadedAttributes;
 
         /// <summary>
-        /// <para>Will search the drawer type in every loaded assemblies.</para>
-        /// <para><i>Can throw an <see cref="Exception"/> if <paramref name="type"/> isn't a valid diagram object !</i></para>
+        /// <para>Will rebuild the <see cref="tree"/> and rescan for every <see cref="CustomCheatSheetAttribute"/>.</para>
         /// </summary>
         /// <returns></returns>
         public void Build () {
@@ -33,12 +32,6 @@ namespace CheatSheets.Stack {
             this.tree = new CheatSheetTree(this.loadedAttributes);
         }
 
-        /// <summary>
-        /// <para>Will search the editor of <paramref name="type"/>.</para>
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="type"></param>
-        /// <returns></returns>
         internal List<CustomCheatSheetAttribute> Scan () {
             List<Type> foundCheatSheetTypes = FindAllDerivedTypes<CheatSheetElement>();
             List<CustomCheatSheetAttribute> foundAttributes = new List<CustomCheatSheetAttribute>();

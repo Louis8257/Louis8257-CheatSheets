@@ -12,12 +12,12 @@ namespace CheatSheets.Creator {
         public const string FILE_EXTENSION_UXML = ".uxml";
 
         /// <summary>
-        /// <para>A text file.</para>
+        /// <para>As text file.</para>
         /// </summary>
         public const string TEMPLATE_PATH_SCRIPT = ROOT_PATH + "script";
         
         /// <summary>
-        /// <para>A text file.</para>
+        /// <para>As text file.</para>
         /// </summary>
         public const string TEMPLATE_PATH_UXML = ROOT_PATH + "visualTree";
 
