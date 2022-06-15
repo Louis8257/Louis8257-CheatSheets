@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="CheatSheets.CheatSheetSelectorWindow">
+    <Position X="2.25" Y="1.25" Width="4" />
+    <AssociationLine Name="itemTemplate" Type="UnityEngine.UIElements.VisualTreeAsset" FixedToPoint="true">
+      <Path>
+        <Point X="6.25" Y="2.625" />
+        <Point X="8" Y="2.625" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="scrollView" Type="UnityEngine.UIElements.ScrollView" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.75" Y="3.896" />
+        <Point X="5.75" Y="4.846" />
+        <Point X="8" Y="4.846" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="sectionTemplate" Type="UnityEngine.UIElements.VisualTreeAsset" FixedFromPoint="true">
+      <Path>
+        <Point X="6.25" Y="3" />
+        <Point X="8" Y="3" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="searchBar" Type="UnityEngine.UIElements.TextField" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.688" Y="3.896" />
+        <Point X="3.688" Y="6.846" />
+        <Point X="8" Y="6.846" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="searchBarHint" Type="UnityEngine.UIElements.Label" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.375" Y="3.896" />
+        <Point X="5.375" Y="5.846" />
+        <Point X="8" Y="5.846" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAgAAAABAAAABAAAAgEEAQAABgACBAQAACAA=</HashCode>
+      <FileName>Assets\Louis8257\Unity-CheatSheets\CheatSheets\Editor\Selector\CheatSheetSelectorWindow.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="createBtn" />
+      <Field Name="itemTemplate" />
+      <Field Name="parent" />
+      <Field Name="scrollView" />
+      <Field Name="sectionTemplate" />
+      <Field Name="searchBar" />
+      <Field Name="searchBarHint" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="UnityEngine.UIElements.Button" Collapsed="true">
+    <Position X="8" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="UnityEngine.UIElements.VisualTreeAsset" Collapsed="true">
+    <Position X="8" Y="2.5" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="CheatSheets.CheatSheetWindow" Collapsed="true">
+    <Position X="8" Y="1.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAEAAAAABgAAAAEEAAIEIgAKAAkBECAA=</HashCode>
+      <FileName>Assets\Louis8257\Unity-CheatSheets\CheatSheets\Editor\CheatSheetWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UIElements.ScrollView" Collapsed="true">
+    <Position X="8" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="UnityEngine.UIElements.TextField" Collapsed="true">
+    <Position X="8" Y="6.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="UnityEngine.UIElements.Label" Collapsed="true">
+    <Position X="8" Y="5.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

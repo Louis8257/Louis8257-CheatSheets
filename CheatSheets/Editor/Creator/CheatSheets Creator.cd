@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="CheatSheets.Creator.CheatSheetCreator">
+    <Position X="3.75" Y="3.5" Width="3.75" />
+    <AssociationLine Name="cheatSheets" Type="CheatSheets.Creator.CheatSheet" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.5" Y="4.375" />
+        <Point X="10.25" Y="4.375" />
+        <Point X="10.25" Y="4.375" />
+        <Point X="15.5" Y="4.375" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.072" Y="0.062" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>REAAAAAAAAAAAAAIEAABAAAAAAAAAAgAgYCAAQAACQA=</HashCode>
+      <FileName>Assets\Louis8257\Unity-CheatSheets\CheatSheets\Editor\Creator\CheatSheetCreator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="scrollView" />
+      <Field Name="addBtn" />
+      <Field Name="createBtn" />
+      <Field Name="removeBtn" />
+      <Field Name="container" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="cheatSheets" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CheatSheets.Creator.ResourcesBuilder">
+    <Position X="3" Y="7.25" Width="6" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAQAAQKAAAACAACAEECAAIEAAgAAAA=</HashCode>
+      <FileName>Assets\Louis8257\Unity-CheatSheets\CheatSheets\Editor\Creator\ResourcesBuilder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="scriptDrafts" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CheatSheets.Creator.ScriptDraft">
+    <Position X="3" Y="12" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAIAACAAAAAAAElAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Louis8257\Unity-CheatSheets\CheatSheets\Editor\Creator\ResourcesBuilder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="textAsset" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="attributes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CheatSheets.Creator.CheatSheet">
+    <Position X="15.5" Y="3.5" Width="4" />
+    <AssociationLine Name="addBtn" Type="UnityEngine.UIElements.Button" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="15.5" Y="5.625" />
+        <Point X="12" Y="5.625" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="foldout" Type="UnityEngine.UIElements.Foldout" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15.953" Y="8.454" />
+        <Point X="15.953" Y="9.5" />
+        <Point X="12" Y="9.5" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="removeBtn" Type="UnityEngine.UIElements.Button" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="15.5" Y="5.875" />
+        <Point X="12" Y="5.875" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="pages" Type="CheatSheets.Creator.CheatSheetPage">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.098" Y="0.177" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="treePath" Type="CheatSheets.Creator.Tuple&lt;T1, T2&gt;" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="18.339" Y="8.454" />
+        <Point X="18.339" Y="11.313" />
+        <Point X="20.75" Y="11.313" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="resourcePath" Type="CheatSheets.Creator.Tuple&lt;T1, T2&gt;" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="16.798" Y="8.454" />
+        <Point X="16.798" Y="12.375" />
+        <Point X="20.75" Y="12.375" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="useNameAsSection" Type="CheatSheets.Creator.Tuple&lt;T1, T2&gt;" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.569" Y="8.454" />
+        <Point X="17.569" Y="11.875" />
+        <Point X="20.75" Y="11.875" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="useNameInPageName" Type="CheatSheets.Creator.Tuple&lt;T1, T2&gt;" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="18.951" Y="8.454" />
+        <Point X="18.951" Y="10.875" />
+        <Point X="20.75" Y="10.875" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="openFolderButton" Type="UnityEngine.UIElements.Button" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15.5" Y="6.125" />
+        <Point X="12" Y="6.125" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.054" Y="0.018" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>GAEAAAAAACCAQCAAEIiBgAABAAQQgDAgAIAQAAAAMBg=</HashCode>
+      <FileName>Assets\Louis8257\Unity-CheatSheets\CheatSheets\Editor\Creator\Components\CheatSheet.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="addBtn" />
+      <Field Name="asset" />
+      <Field Name="foldout" />
+      <Field Name="openFolderButton" />
+      <Field Name="removeBtn" />
+      <Field Name="treePath" />
+      <Field Name="pageListContainer" />
+      <Field Name="resourcePath" />
+      <Field Name="useNameAsSection" />
+      <Field Name="useNameInPageName" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="pages" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UnityEngine.UIElements.ScrollView" Collapsed="true" HideInheritanceLine="true">
+    <Position X="10.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.String" Collapsed="true">
+    <Position X="9.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UnityEngine.TextAsset" Collapsed="true">
+    <Position X="9.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="CheatSheets.Creator.CheatSheetPage">
+    <Position X="22" Y="4" Width="3.25" />
+    <InheritanceLine Type="CheatSheets.Creator.VisualItem" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="19.75" Y="2.562" />
+        <Point X="19.75" Y="2.937" />
+        <Point X="23.438" Y="2.937" />
+        <Point X="23.438" Y="4" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="asset" Type="UnityEngine.UIElements.VisualTreeAsset" ManuallyRouted="true">
+      <Path>
+        <Point X="22.922" Y="7.223" />
+        <Point X="22.922" Y="9.048" />
+        <Point X="19.034" Y="9.048" Type="JumpStart" />
+        <Point X="18.868" Y="9.048" Type="JumpEnd" />
+        <Point X="18.423" Y="9.048" Type="JumpStart" />
+        <Point X="18.256" Y="9.048" Type="JumpEnd" />
+        <Point X="17.652" Y="9.048" Type="JumpStart" />
+        <Point X="17.486" Y="9.048" Type="JumpEnd" />
+        <Point X="16.882" Y="9.048" Type="JumpStart" />
+        <Point X="16.715" Y="9.048" Type="JumpEnd" />
+        <Point X="16.036" Y="9.048" Type="JumpStart" />
+        <Point X="15.87" Y="9.048" Type="JumpEnd" />
+        <Point X="12.821" Y="9.048" />
+        <Point X="12.821" Y="7.432" />
+        <Point X="12" Y="7.432" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="keywords" Type="CheatSheets.Creator.Tuple&lt;T1, T2&gt;" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="25.25" Y="4.812" />
+        <Point X="26.398" Y="4.812" />
+        <Point X="26.398" Y="11.875" />
+        <Point X="24" Y="11.875" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="number" Type="CheatSheets.Creator.Tuple&lt;T1, T2&gt;" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="25.25" Y="5.062" />
+        <Point X="25.985" Y="5.062" />
+        <Point X="25.985" Y="11.5" />
+        <Point X="24" Y="11.5" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="showPageNumber" Type="CheatSheets.Creator.Tuple&lt;T1, T2&gt;" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="25.25" Y="4.438" />
+        <Point X="26.85" Y="4.438" />
+        <Point X="26.85" Y="12.438" />
+        <Point X="24" Y="12.438" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="useNumber" Type="CheatSheets.Creator.Tuple&lt;T1, T2&gt;" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="25.25" Y="5.375" />
+        <Point X="25.625" Y="5.375" />
+        <Point X="25.625" Y="10.875" />
+        <Point X="24" Y="10.875" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.11" Y="0.06" Height="0.182" Width="0.956" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="foldout" Type="UnityEngine.UIElements.Foldout" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="24.117" Y="7.223" />
+        <Point X="24.117" Y="9.812" />
+        <Point X="19.034" Y="9.812" Type="JumpStart" />
+        <Point X="18.868" Y="9.812" Type="JumpEnd" />
+        <Point X="18.423" Y="9.812" Type="JumpStart" />
+        <Point X="18.256" Y="9.812" Type="JumpEnd" />
+        <Point X="17.652" Y="9.812" Type="JumpStart" />
+        <Point X="17.486" Y="9.812" Type="JumpEnd" />
+        <Point X="16.882" Y="9.812" Type="JumpStart" />
+        <Point X="16.715" Y="9.812" Type="JumpEnd" />
+        <Point X="12" Y="9.812" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAQABAAAABgAAAAAIQADAAQCAwAAAAIBA=</HashCode>
+      <FileName>Assets\Louis8257\Unity-CheatSheets\CheatSheets\Editor\Creator\Components\CheatSheetPage.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="asset" />
+      <Field Name="keywords" />
+      <Field Name="number" />
+      <Field Name="showPageNumber" />
+      <Field Name="useNumber" />
+      <Field Name="parent" />
+      <Field Name="foldout" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CheatSheets.Creator.Tuple&lt;T1, T2&gt;">
+    <Position X="20.75" Y="10.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAJAAACgQAAAAAAAAAAEAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Louis8257\Unity-CheatSheets\CheatSheets\Editor\Creator\Components\Tuple.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CheatSheets.Creator.VisualItem" Collapsed="true">
+    <Position X="19" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAEAAAAAAAAAAggAAAEAAUABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Louis8257\Unity-CheatSheets\CheatSheets\Editor\Creator\Components\VisualItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UIElements.Button" Collapsed="true">
+    <Position X="10.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="UnityEngine.UIElements.VisualElement" Collapsed="true">
+    <Position X="10.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UnityEngine.UIElements.VisualTreeAsset" Collapsed="true">
+    <Position X="10.5" Y="7" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="UnityEngine.UIElements.Foldout" Collapsed="true">
+    <Position X="10.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -213,6 +213,22 @@ namespace CheatSheets {
             return this.pageNumber > 0;
         }
 
+        public CustomCheatSheetAttribute GetPage ( int pageNumber ) {
+            CustomCheatSheetAttribute res = this;
+
+            if ( this.pageNumber > pageNumber ) {
+                res = this.HasPreviousPage() ? this.previousPage.GetPage(pageNumber) : this;
+            } else if ( this.pageNumber < pageNumber ) {
+                res = this.HasNextPage() ? this.nextPage.GetPage(pageNumber) : this;
+            }
+
+            return res;
+        }
+
+        public CustomCheatSheetAttribute GetFirstPage () {
+            return this.GetPage(1);
+        }
+
         /// <summary>
         /// <para>Recursive.</para>
         /// </summary>

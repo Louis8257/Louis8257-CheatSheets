@@ -62,7 +62,7 @@ namespace CheatSheets {
         }
 
         void GoToPage3Btn_clicked () {
-            this.window.selectedPage = this.window.stack.loadedAttributes.Find(o => o.pageNumber == 3);
+            this.window.selectedPage = this.attribute.GetPage(3);
         }
         #endregion
 

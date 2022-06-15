@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="CheatSheets.Stack.CheatSheetStack">
+    <Position X="8" Y="2.5" Width="6.5" />
+    <AssociationLine Name="loadedAttributes" Type="CheatSheets.CustomCheatSheetAttribute">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.11" Y="0.06" Height="0.182" Width="3.451" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAgAAAAAAAQAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Louis8257\Unity-CheatSheets\CheatSheets\Editor\Stack\CheatSheetStack.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="tree" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="loadedAttributes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CheatSheets.Stack.AttributeMissingException">
+    <Position X="15.25" Y="2.5" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Louis8257\Unity-CheatSheets\CheatSheets\Editor\Stack\CheatSheetStack.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CheatSheets.Stack.CantFindPageException">
+    <Position X="19.75" Y="2.5" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Louis8257\Unity-CheatSheets\CheatSheets\Editor\Stack\CheatSheetStack.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CheatSheets.Stack.CheatSheetTree">
+    <Position X="8" Y="4.75" Width="6.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAQAAgAAAAAAAAAAgAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Assets\Louis8257\Unity-CheatSheets\CheatSheets\Editor\Stack\CheatSheetTree.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CheatSheets.Stack.CheatSheetVisualElementBuilder">
+    <Position X="15.25" Y="4.75" Width="5.75" />
+    <AssociationLine Name="itemTemplate" Type="UnityEngine.UIElements.VisualTreeAsset" FixedFromPoint="true">
+      <Path>
+        <Point X="21" Y="6" />
+        <Point X="23.75" Y="6" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAABAAAAAEAAAAAAAAQAEACAAAAAAIgEA=</HashCode>
+      <FileName>Assets\Louis8257\Unity-CheatSheets\CheatSheets\Editor\Stack\CheatSheetTree.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="itemTemplate" />
+      <Field Name="sectionTemplate" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CheatSheets.Stack.Section">
+    <Position X="8" Y="8" Width="6.5" />
+    <AssociationLine Name="attributes" Type="CheatSheets.CustomCheatSheetAttribute">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.024" Y="0.06" Height="0.182" Width="2.96" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="subSections" Type="CheatSheets.Stack.Section" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.75" Y="10.324" />
+        <Point X="13.75" Y="10.964" />
+        <Point X="16.385" Y="10.964" />
+        <Point X="16.385" Y="9.438" />
+        <Point X="14.5" Y="9.438" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAwAAAAAEAEEAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Assets\Louis8257\Unity-CheatSheets\CheatSheets\Editor\Stack\Section.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="root" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="attributes" />
+      <Field Name="subSections" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CheatSheets.CustomCheatSheetAttribute" Collapsed="true">
+    <Position X="2" Y="2.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AIOAAAAAgAAAQACgAAAAGAAcgCIAUAAAAAAkAAAAAIA=</HashCode>
+      <FileName>Assets\Louis8257\Unity-CheatSheets\CheatSheets\Editor\CheatSheetElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UIElements.VisualTreeAsset" Collapsed="true">
+    <Position X="23.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="UnityEngine.UIElements.VisualElement" Collapsed="true">
+    <Position X="23.75" Y="8" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

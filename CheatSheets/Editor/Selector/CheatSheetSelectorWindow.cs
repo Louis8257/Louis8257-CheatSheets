@@ -60,7 +60,7 @@ namespace CheatSheets {
             float hueIncrementation = 1f / (tree.subSections.Count + tree.attributes.Count);
 
             this.scrollView.Clear();
-            this.scrollView.Add(tree.GetVisualElement(this.scrollView, null, 0.0f, hueIncrementation));
+            this.scrollView.Add(tree.GetVisualElement(this.scrollView, 0.0f, hueIncrementation));
             tree.UnfoldSections(this.parent.selectedPage);
             tree.HighlightItem(this.parent.selectedPage);
         }

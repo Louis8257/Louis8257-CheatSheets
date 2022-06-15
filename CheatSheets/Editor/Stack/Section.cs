@@ -1,7 +1,5 @@
-﻿using CheatSheets.Selector;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.InteropServices;
 using UnityEngine.UIElements;
 
 namespace CheatSheets.Stack {
@@ -38,7 +36,7 @@ namespace CheatSheets.Stack {
         /// <param name="parent"></param>
         /// <param name="filter"></param>
         /// <returns></returns>
-        public VisualElement GetVisualElement ( VisualElement parent, [Optional]Filter filter, float hue, float hueIncrementation ) {
+        public VisualElement GetVisualElement ( VisualElement parent, float hue, float hueIncrementation ) {
             this.root.Clear();
 
             // Draw Sections
@@ -49,7 +47,7 @@ namespace CheatSheets.Stack {
                 this.root.Add(subSectionVisualElement);
 
                 float hueSubIncrementation = hueIncrementation * (1f / (subSection.subSections.Count + subSection.attributes.Count));
-                container.Add(subSection.GetVisualElement(container, filter, hue, hueSubIncrementation));
+                container.Add(subSection.GetVisualElement(container, hue, hueSubIncrementation));
                 hue += hueIncrementation;
             }
 

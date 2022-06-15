@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="CheatSheets.CheatSheetElement">
+    <Position X="13.25" Y="1.5" Width="5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAEAACAAAgABAgAAAABAAAAIAQCAAAAACAA=</HashCode>
+      <FileName>Assets\Louis8257\Unity-CheatSheets\CheatSheets\Editor\CheatSheetElement.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="window" />
+      <Field Name="visualTreeAsset" />
+      <Field Name="_rootVisualElement" />
+      <Field Name="_attribute" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CheatSheets.CustomCheatSheetAttribute">
+    <Position X="13.25" Y="5.25" Width="5" />
+    <AssociationLine Name="previousPage" Type="CheatSheets.CustomCheatSheetAttribute" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.812" Y="11.04" />
+        <Point X="17.812" Y="11.193" />
+        <Point X="19.474" Y="11.193" />
+        <Point X="19.474" Y="10.098" />
+        <Point X="18.25" Y="10.098" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="nextPage" Type="CheatSheets.CustomCheatSheetAttribute" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.625" Y="11.04" />
+        <Point X="17.625" Y="11.423" />
+        <Point X="19.716" Y="11.423" />
+        <Point X="19.716" Y="9.669" />
+        <Point X="18.25" Y="9.669" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AIOAAAAAgAAAQACgAAAAGAAcgCIQUAAAAAAkAAAAAIE=</HashCode>
+      <FileName>Assets\Louis8257\Unity-CheatSheets\CheatSheets\Editor\CheatSheetElement.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="element" />
+      <Field Name="previousPage" />
+      <Field Name="nextPage" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="keywords" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CheatSheets.CheatSheetWindow">
+    <Position X="6.5" Y="3" Width="4" />
+    <AssociationLine Name="cheatSheetSelectorBtn" Type="UnityEngine.UIElements.Button" FixedToPoint="true">
+      <Path>
+        <Point X="6.5" Y="3.688" />
+        <Point X="4" Y="3.688" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="nextCheatSheetBtn" Type="UnityEngine.UIElements.Button" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.5" Y="3.052" />
+        <Point X="4.75" Y="3.052" />
+        <Point X="4.75" Y="3.062" />
+        <Point X="4" Y="3.062" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAEAAAAABgAAAAEEAAIEIgAKAAkBECAA=</HashCode>
+      <FileName>Assets\Louis8257\Unity-CheatSheets\CheatSheets\Editor\CheatSheetWindow.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="stack" />
+      <Field Name="_selectedPage" />
+      <Field Name="selectorWindow" />
+      <Field Name="scrollView" />
+      <Field Name="pageNumberLabel" />
+      <Field Name="cheatSheetSelectorBtn" />
+      <Field Name="previousCheatSheetBtn" />
+      <Field Name="nextCheatSheetBtn" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="UnityEngine.UIElements.Button" Collapsed="true">
+    <Position X="2.5" Y="3" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="UnityEngine.UIElements.Label" Collapsed="true">
+    <Position X="2.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="UnityEngine.UIElements.ScrollView" Collapsed="true" HideInheritanceLine="true">
+    <Position X="2.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="CheatSheets.Stack.CheatSheetStack" Collapsed="true">
+    <Position X="2.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAgAAAAAAAQAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Louis8257\Unity-CheatSheets\CheatSheets\Editor\Stack\CheatSheetStack.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CheatSheets.CheatSheetSelectorWindow" Collapsed="true">
+    <Position X="2.5" Y="1.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAgAAAABAAAABAAAAgEEAQAABgACBAQAACAA=</HashCode>
+      <FileName>Assets\Louis8257\Unity-CheatSheets\CheatSheets\Editor\Selector\CheatSheetSelectorWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.UIElements.VisualElement" Collapsed="true">
+    <Position X="20.25" Y="2" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UnityEngine.UIElements.VisualTreeAsset" Collapsed="true">
+    <Position X="20.25" Y="3" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.String" Collapsed="true">
+    <Position X="20.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

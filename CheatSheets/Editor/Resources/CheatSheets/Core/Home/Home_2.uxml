@@ -14,9 +14,9 @@
         <engine:Label class="BodyText" text="Cheat Sheets uses mainly reflections to detect new sheets and Unity's UIElements to diplay the sheet."/>
         
         <engine:Label class="SectionTitle" text="Custom Attribute"/>
-        <engine:Label class="BodyText"     text="It uses a custom attribute called CustomCheatSheetAttribute that must be attached in a class extending from CheatSheetElement."/>
+        <engine:Label class="BodyText"     text="It uses a custom attribute called CustomCheatSheetAttribute that must be attached in a serializable class extending from CheatSheetElement."/>
         <engine:Label class="BodyText"     text="This design allows modularity by getting every classes directly and then scan the attributes, regardless of the namespace or assembly."/>
-        <engine:Label class="BoldBodyText" text="Every cheat sheets must be in the Resources folder! Otherwise it won't be able to find your UXML files"/>
+        <engine:Label class="BoldBodyText" text="Every cheat sheets must be in the Resources folder! Otherwise it won't be able to find your UXML files."/>
 
         <engine:Label class="SectionTitle" text="UXML and USS"/>
         <engine:Label class="BodyText" text="To display text and images or any VisualElements, Cheat Sheets relies on UXML files. You can link an USS (Unity Style Sheet) by creating a Root VisualElement and then attach the style sheet inside but every elements must be inside the Root."/>
