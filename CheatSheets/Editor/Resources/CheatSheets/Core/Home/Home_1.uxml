@@ -9,9 +9,9 @@
         <Style src="HomeStyles.uss"/>
 
         <engine:Label class="MainTitle" text="Welcome!"/>
-        <engine:Label class="BodyText" text="Thank you for using Cheat Sheets!"/>
-        <engine:Label class="BodyText" text="This was brought to you by Louis-Pierre Aubert, downloaded from GitHub."/>
-        <engine:Label class="BodyText" text="To see a cheat sheet, click on the button at the top of this window."/>
+        <engine:Label class="BodyText"  text="Thank you for using Cheat Sheets!"/>
+        <engine:Label class="BodyText"  text="This was brought to you by Louis-Pierre Aubert, downloaded from GitHub."/>
+        <engine:Label class="BodyText"  text="To see a cheat sheet, click on the button at the top of this window."/>
 
         <engine:VisualElement class="Space"/>
         <engine:Label class="ItalicBodyText" text="Click on the Next button to change page."/>

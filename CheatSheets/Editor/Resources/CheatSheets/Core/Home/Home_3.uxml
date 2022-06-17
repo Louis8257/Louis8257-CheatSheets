@@ -1,52 +1,36 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<engine:UXML
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:engine="UnityEngine.UIElements"
-    xmlns:editor="UnityEditor.UIElements"
-    xsi:noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd"
->
-    <engine:VisualElement name="Root">
-        <Style src="HomeStyles.uss"/>
-
-        <engine:Label class="MainTitle" text="Script and Custom Attribute"/>
-        
-        <engine:Label class="BodyText" text="Every cheat sheets are represented as a class extending CheatSheetElement and each CustomCheatSheet attribute represents a page."/>
-        <engine:Label class="BodyText" text="Making a cheat sheet is very straightforward and making pages can be simple or complex for specific usages."/>
-        
-        <engine:Label class="SectionTitle" text="Script"/>
-        <engine:Label class="BodyText"       text="The script is just a class extending CheatSheetElement. It will not work without any attribute. It also regroups every interactions with the pages."/>
-        <engine:Label class="BodyText"       text="Just like in the Editor class, you can modify the methods OnEnable(), OnDisable() and OnGUI(). OnEnable and OnDisable is called when the page's visual element is created or destroyed, respectively. OnGUI is called from the main window and is refreshed every frame when an input is made in this window or you can override the method RequiresConstantRepaint() to return true to force a repaint on each frame."/>
-        <engine:Label class="ItalicBodyText" text="I recommand to create a method or class for each page and using a switch for each page number with enums."/>
-
-        <engine:Label class="SectionTitle" text="Attribute"/>
-        <engine:Label class="BodyText" text="The attribute define a page following this format bellow:"/>
-
-        <engine:VisualElement class="ImageFrame">
-            <engine:VisualElement class="Image_AttributeLine"/>
-        </engine:VisualElement>
-
-        <engine:VisualElement class="List">
-            <engine:VisualElement class="ListItem">
-                <engine:Label class="ListItemTitle" text="Tree Path"/>
-                <engine:Label class="ListItemBody" text="Tells the stack in which section this page will be placed. Must contain a '/' separator for each section." />
-                <engine:Label class="ListItemBody" text="You can also define the page number and name by adding '#' at the end followed by and integer number and a name. There must be a space between this number and the name." />
-            </engine:VisualElement>
-
-            <engine:VisualElement class="ListItem">
-                <engine:Label class="ListItemTitle" text="Resource Path"/>
-                <engine:Label class="ListItemBody" text="The location of the UXML file in the resource folder. Must contain a '/' separator for each folder and contain an unique file name at the end."/>
-                <engine:Label class="ListItemBody" text="Keep in mind that you must place your UXML file in any 'Resources' folder." />
-            </engine:VisualElement>
-
-            <engine:VisualElement class="ListItem">
-                <engine:Label class="ListItemTitle" text="Keywords"/>
-                <engine:Label class="ListItemBody"       text="To make your page more possible and easier to find, you can describe its content here."/>
-                <engine:Label class="ListItemBody"       text="It's optional but I strongly recommand to do so."/>
-                <engine:Label class="ListItemItalicBody" text="I also recommand to add plural words instead of singular words to maximize the chance of the user finding this page. If the plural word is written different than the singular word (like tooth and teeth or mouse and mice for example), use both."/>
-            </engine:VisualElement>
-        </engine:VisualElement>
-
-        <engine:VisualElement class="PageEndSpace"/>
-
-    </engine:VisualElement>
-</engine:UXML>
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="Root">
+        <Style src="HomeStyles.uss" />
+        <ui:Label text="Script and Custom Attribute" class="MainTitle" />
+        <ui:Label text="Every cheat sheets are represented as a class extending CheatSheetElement and each CustomCheatSheet attribute represents a page." class="BodyText" />
+        <ui:Label text="Making a cheat sheet is very straightforward and making pages can be simple or complex for specific usages." class="BodyText" />
+        <ui:Label text="Script" class="SectionTitle" />
+        <ui:Label text="The script is just a class extending CheatSheetElement. It will not work without any attribute. It also regroups every interactions with the pages." class="BodyText" />
+        <ui:Label text="Just like in the Editor class, you can modify the methods OnEnable(), OnDisable() and OnGUI(). OnEnable and OnDisable is called when the page&apos;s visual element is created or destroyed, respectively. OnGUI is called from the main window and is refreshed every frame when an input is made in this window or you can override the method RequiresConstantRepaint() to return true to force a repaint on each frame." class="BodyText" />
+        <ui:Label text="I recommand to create a method or class for each page and using a switch for each page number with enums." class="ItalicBodyText" />
+        <ui:Label text="Attribute" class="SectionTitle" />
+        <ui:Label text="The attribute define a page following this format bellow:" class="BodyText" />
+        <ui:VisualElement class="ImageFrame">
+            <ui:VisualElement class="Image_AttributeLine" />
+        </ui:VisualElement>
+        <ui:VisualElement class="List">
+            <ui:VisualElement class="ListItem">
+                <ui:Label text="Tree Path" class="ListItemTitle" />
+                <ui:Label text="Tells to the stack in which section this page will be placed. Must contain a &apos;/&apos; separator for each section." class="ListItemBody" />
+                <ui:Label text="You can also define the page number and name by adding &apos;#&apos; at the end followed by and integer number and a name. There must be a space between this number and the name." class="ListItemBody" />
+            </ui:VisualElement>
+            <ui:VisualElement class="ListItem">
+                <ui:Label text="Resource Path" class="ListItemTitle" />
+                <ui:Label text="The location of the UXML file in the resource folder. Must contain a &apos;/&apos; separator for each folder and contain an unique file name at the end." class="ListItemBody" />
+                <ui:Label text="Keep in mind that you must place your UXML file in any &apos;Resources&apos; folder." class="ListItemBody" />
+            </ui:VisualElement>
+            <ui:VisualElement class="ListItem">
+                <ui:Label text="Keywords" class="ListItemTitle" />
+                <ui:Label text="To make your page more possible and easier to find, you can describe its content here." class="ListItemBody" />
+                <ui:Label text="It&apos;s optional but I strongly recommand to do so." class="ListItemBody" />
+                <ui:Label text="I also recommand to add plural words instead of singular words to maximize the chance of the user finding this page. If the plural word is written different than the singular word (like tooth and teeth or mouse and mice for example), use both." class="ListItemItalicBody" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="PageEndSpace" />
+    </ui:VisualElement>
+</ui:UXML>

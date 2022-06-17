@@ -1,38 +1,23 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<engine:UXML
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:engine="UnityEngine.UIElements"
-    xmlns:editor="UnityEditor.UIElements"
-    xsi:noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd"
->
-    <engine:VisualElement name="Root">
-        <Style src="HomeStyles.uss"/>
-
-        <engine:Label class="MainTitle" text="How does it works?"/>
-
-        <engine:Label class="BodyText" text="This page is a small glossary of the features."/>
-        <engine:Label class="BodyText" text="Cheat Sheets uses mainly reflections to detect new sheets and Unity's UIElements to diplay the sheet."/>
-        
-        <engine:Label class="SectionTitle" text="Custom Attribute"/>
-        <engine:Label class="BodyText"     text="It uses a custom attribute called CustomCheatSheetAttribute that must be attached in a serializable class extending from CheatSheetElement."/>
-        <engine:Label class="BodyText"     text="This design allows modularity by getting every classes directly and then scan the attributes, regardless of the namespace or assembly."/>
-        <engine:Label class="BoldBodyText" text="Every cheat sheets must be in the Resources folder! Otherwise it won't be able to find your UXML files."/>
-
-        <engine:Label class="SectionTitle" text="UXML and USS"/>
-        <engine:Label class="BodyText" text="To display text and images or any VisualElements, Cheat Sheets relies on UXML files. You can link an USS (Unity Style Sheet) by creating a Root VisualElement and then attach the style sheet inside but every elements must be inside the Root."/>
-
-        <engine:Label class="SectionTitle" text="Stack"/>
-        <engine:Label class="BodyText" text="The stack is refreshed every time you open the Cheat Sheets window. It will read and connect every pages to others and place them in a tree."/>
-        <engine:Label class="BodyText" text="When searching, it will create another tree but only with the attributes containing the keywords."/>
-
-        <engine:Label class="SectionTitle" text="Selector"/>
-        <engine:Label class="BodyText" text="Self explanatory. You can open its window by clicking on the button at the top of the Cheat Sheets window. You can select any page from any attributes. They are sorted by alphabetical orders with a color mark."/>
-
-        <engine:Label class="SectionTitle" text="Creator"/>
-        <engine:Label class="BodyText" text="To avoid to rewrite the same scripts and UXML resources again, you can use this tool! You can create several cheat sheets and pages. Pages are linked to the cheat sheet script automatically."/>
-        <engine:Label class="BodyText" text="You can open the creator by clicking on the '+' button at the right top corner in the Selector window."/>
-
-        <engine:VisualElement class="PageEndSpace"/>
-
-    </engine:VisualElement>
-</engine:UXML>
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="Root">
+        <Style src="HomeStyles.uss" />
+        <ui:Label text="How does it works?" class="MainTitle" />
+        <ui:Label text="This page is a small glossary of the features." class="BodyText" />
+        <ui:Label text="Cheat Sheets uses mainly reflections to detect new sheets and Unity&apos;s UIElements to display the sheet." class="BodyText" />
+        <ui:Label text="Custom Attribute" class="SectionTitle" />
+        <ui:Label text="It uses a custom attribute called CustomCheatSheetAttribute that must be attached in a serializable class extending from CheatSheetElement." class="BodyText" />
+        <ui:Label text="This design allows modularity by getting every classes directly and then scan the attributes, regardless of the namespace or assembly." class="BodyText" />
+        <ui:Label text="Every cheat sheets must be in the Resources folder! Otherwise it won&apos;t be able to find your UXML files." class="BoldBodyText" />
+        <ui:Label text="UXML and USS" class="SectionTitle" />
+        <ui:Label text="To display text and images or any VisualElements, Cheat Sheets relies on UXML files. You can link an USS (Unity Style Sheet) by creating a Root VisualElement and then attach the style sheet inside but every elements must be inside the Root." class="BodyText" />
+        <ui:Label text="Stack" class="SectionTitle" />
+        <ui:Label text="The stack is refreshed every time you open the Cheat Sheets window. It will read and connect every pages to others and place them in a tree." class="BodyText" />
+        <ui:Label text="When searching, it will create another tree but only with the attributes containing the keywords." class="BodyText" />
+        <ui:Label text="Selector" class="SectionTitle" />
+        <ui:Label text="Self explanatory. You can open its window by clicking on the button at the top of the Cheat Sheets window. You can select any page from any attributes. They are sorted by alphabetical orders with a color mark." class="BodyText" />
+        <ui:Label text="Creator" class="SectionTitle" />
+        <ui:Label text="To avoid to rewrite the same scripts and UXML resources again, you can use this tool! You can create several cheat sheets and pages. Pages are linked to the cheat sheet script automatically." class="BodyText" />
+        <ui:Label text="You can open the creator by clicking on the &apos;+&apos; button at the right top corner in the Selector window." class="BodyText" />
+        <ui:VisualElement class="PageEndSpace" />
+    </ui:VisualElement>
+</ui:UXML>

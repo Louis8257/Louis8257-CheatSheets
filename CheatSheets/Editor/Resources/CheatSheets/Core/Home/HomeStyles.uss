@@ -1,135 +1,134 @@
-﻿.AllignInRow {
-	flex-direction: row;
+.AllignInRow {
+    flex-direction: row;
 }
 
 .MainTitle {
-	-unity-font-style: bold;
-	font-size: 20px;
-	white-space: normal;
-	-unity-text-align: middle-center;
-	margin-top: 5px;
-	margin-bottom: 15px;
+    -unity-font-style: bold;
+    font-size: 20px;
+    white-space: normal;
+    -unity-text-align: middle-center;
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
 
 .SectionTitle {
-	-unity-font-style: bold;
-	font-size: 16px;
-	white-space: normal;
-	-unity-text-align: middle-left;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	margin-left: 10px;
+    -unity-font-style: bold;
+    font-size: 16px;
+    white-space: normal;
+    -unity-text-align: middle-left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
 }
 
 .BodyText {
-	white-space: normal;
-	margin: 5px;
-	margin-left: 15px;
+    white-space: normal;
+    margin: 5px;
+    margin-left: 15px;
 }
 
 .BoldBodyText {
-	white-space: normal;
-	margin: 5px;
-	margin-left: 15px;
-	-unity-font-style: bold;
+    white-space: normal;
+    margin: 5px;
+    margin-left: 15px;
+    -unity-font-style: bold;
 }
 
 .ItalicBodyText {
-	white-space: normal;
-	margin: 5px;
-	margin-left: 15px;
-	-unity-font-style: italic;
+    white-space: normal;
+    margin: 5px;
+    margin-left: 15px;
+    -unity-font-style: italic;
 }
 
 .Space {
-	height: 10px;
+    height: 10px;
 }
 
 .PageEndSpace {
-	height: 50px;
+    height: 50px;
 }
 
 .MiniButtonContainer {
-	flex-shrink: 1;
-	flex-wrap: wrap;
-	align-items: flex-end;
-	margin: 10px;
-	margin-top: 3px;
-	margin-bottom: 3px;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 
 .List {
-	margin-left: 10px;
+    margin-left: 10px;
 }
 
 .ListItem {
-	margin: 7px;
-	margin-left: 15px;
+    margin: 7px;
+    margin-left: 15px;
 }
 
 .ListItemTitle {
-	white-space: normal;
-	-unity-font-style: bold;
+    white-space: normal;
+    -unity-font-style: bold;
 }
 
 .ListItemBody {
-	white-space: normal;
-	margin-top: 5px;
-	margin-left: 5px;
+    white-space: normal;
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
 .ListItemBoldBody {
-	white-space: normal;
-	margin-top: 5px;
-	margin-left: 5px;
-	-unity-font-style: bold;
+    white-space: normal;
+    margin-top: 5px;
+    margin-left: 5px;
+    -unity-font-style: bold;
 }
 
 .ListItemItalicBody {
-	white-space: normal;
-	margin-top: 5px;
-	margin-left: 5px;
-	-unity-font-style: italic;
+    white-space: normal;
+    margin-top: 5px;
+    margin-left: 5px;
+    -unity-font-style: italic;
 }
 
 .Rectangle {
-	margin-right: 3px;
-	border-width: 2px;
-	background-color: rgba(0, 0, 0, 0)
-	width: 25px;
-	min-width: 25px;
-	max-width: 25px;
-	height: 15px;
-	flex-shrink: 0
+    margin-right: 3px;
+    border-width: 2px;
+    background-color: rgba(0, 0, 0, 0) width 25px;
+    min-width: 25px;
+    max-width: 25px;
+    height: 15px;
+    flex-shrink: 0;
 }
 
 .ImageFrame {
-	align-items: center;
+    align-items: center;
 }
 
 .Image_AttributeLine {
-	background-image: resource("CheatSheets/Core/Home/images/cheatSheets_attributeLine");
-	width: 430px;
-	height: 43px;
-	flex-shrink: 0;
-	flex-grow: 0;
-	margin: 5px;
+    background-image: resource('CheatSheets/Core/Home/images/cheatSheets_attributeLine');
+    width: 430px;
+    height: 43px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin: 5px;
 }
 
 .Image_AccessCreatorWizard {
-	background-image: resource("CheatSheets/Core/Home/images/cheatSheets_accessCreatorWizard");
-	width: 430px;
-	height: 90px;
-	flex-shrink: 0;
-	flex-grow: 0;
-	margin: 5px;
+    background-image: resource('CheatSheets/Core/Home/images/cheatSheets_accessCreatorWizard');
+    width: 430px;
+    height: 90px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin: 5px;
 }
 
 .Image_CreatorWizard {
-	background-image: resource("CheatSheets/Core/Home/images/cheatSheets_creatorWizard");
-	width: 350px;
-	height: 350px;
-	flex-shrink: 0;
-	flex-grow: 0;
-	margin: 5px;
+    background-image: resource('CheatSheets/Core/Home/images/cheatSheets_creatorWizard');
+    width: 350px;
+    height: 350px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin: 5px;
 }

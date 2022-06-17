@@ -1,101 +1,76 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<engine:UXML
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:engine="UnityEngine.UIElements"
-    xmlns:editor="UnityEditor.UIElements"
-    xsi:noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd"
->
-    <engine:VisualElement name="Root">
-        <Style src="HomeStyles.uss"/>
-
-        <engine:Label class="MainTitle" text="Create A Cheat Sheet"/>
-        <engine:Label class="BodyText"    text="In this tutorial, we will use the built-in Cheat Sheets Creator, so you can make the files quickly. We will also create three pages, so you learn how to create several cheat sheets and pages."/>
-        <engine:Label class="BodyText"    text="You can make these files manually, like in the Script And Custom Attribute page."/>
-        
-        <engine:VisualElement class="MiniButtonContainer">
-            <engine:Button class="MiniButton" name="GoToPage3Btn" text="Go to Script And Custom Attribute"/>
-        </engine:VisualElement>
-
-        <engine:Label class="SectionTitle" text="Cheat Sheets Creator Overview"/>
-        <engine:Label class="BodyText" text="To access the cheat sheet creator, click on the + in the top-right corner of the selector window, at the end of the search bar."/>
-
-        <engine:VisualElement class="ImageFrame">
-            <engine:VisualElement class="Image_AccessCreatorWizard"/>
-        </engine:VisualElement>
-
-        <engine:Label class="BodyText" text="Once you open the wizard, it might be confusing at first glance but it's actually simple once you decomposed it into layouts!"/>
-
-        <engine:VisualElement class="ImageFrame">
-            <engine:VisualElement class="Image_CreatorWizard"/>
-        </engine:VisualElement>
-
-        <engine:VisualElement class="List">
-
-            <engine:VisualElement class="ListItem">
-                <engine:VisualElement class="AllignInRow">
-                    <engine:VisualElement class="Rectangle" style="border-color: green"/>
-                    <engine:Label class="ListItemTitle" text="List Of Cheat Sheets"/>
-                </engine:VisualElement>
-                <engine:Label class="ListItemBody" text="This will regroup the pages in the same section. You can also add several cheat sheets!"/>
-                <engine:Label class="ListItemItalicBody" text="It represents an CheatSheetElement class."/>
-            </engine:VisualElement>
-            <engine:VisualElement class="ListItem">
-                <engine:VisualElement class="AllignInRow">
-                    <engine:VisualElement class="Rectangle" style="border-color: red"/>
-                    <engine:Label class="ListItemTitle" text="List Of Pages"/>
-                </engine:VisualElement>
-                <engine:Label class="ListItemBody" text="This list is unique for each cheat sheet."/>
-                <engine:Label class="ListItemItalicBody" text="It represents a CustomCheatSheet attribute."/>
-            </engine:VisualElement>
-
-        </engine:VisualElement>
-
-        <engine:Label class="ItalicBodyText" text="ListView was considered during the development but you can't have individual item size and you can't make it reorderable anymore. I'm using ScrollView instead, for now."/>
-
-        <engine:Label class="SectionTitle" text="Generate Your First Cheat Sheet"/>
-        <engine:Label class="BodyText"       text="Now we can start to make a cheat sheet!"/>
-        <engine:Label class="ItalicBodyText" text="Every fields have a tooltip, if you forgot what field does what."/>
-
-        <engine:VisualElement class="List">
-            <engine:VisualElement class="ListItem">
-                <engine:Label class="ListItemTitle" text="Configuring A Cheat Sheet"/>    
-                <engine:Label class="BodyText"       text="We will call this cheat sheet &quot;Test&quot;. You can name it whatever you like."/>
-                <engine:Label class="BodyText"       text="The tree path will be &quot;Test Section&quot;. If you want to create a subsection, you can put a '/' separator and then a new section name. You can also put no section name at all but I strongly recommand to regroup your pages under a section, unless you checked the checkbox bellow."/>
-                <engine:Label class="ItalicBodyText" text="You can let these checkboxes as they are. It will add a subsection to the tree path with the name of this cheat sheet."/>
-                <engine:Label class="BodyText"       text="Now you have to choose a &quot;Resources&quot; folder. Try to create an empty &quot;Resources&quot; folder anywhere in your project. Click on &quot;Open Folder...&quot; to pick a folder."/>
-            </engine:VisualElement>
-
-            <engine:VisualElement class="ListItem">
-                <engine:Label class="ListItemTitle" text="Configuring A Page"/>
-                <engine:Label class="BodyText"       text="Like for the cheat sheet, you can name this page whatever you like."/>
-                <engine:Label class="BodyText"       text="Check the checkbox &quot;Use Number&quot; and don't change their values."/>
-                <engine:Label class="ItalicBodyText" text="When we will create a new page, it will clone this one and increment the page number."/>
-            </engine:VisualElement>
-            <engine:VisualElement class="ListItem">
-                <engine:Label class="ListItemTitle" text="Adding A New Page"/>
-                <engine:Label class="BodyText" text="Still in the cheat sheet layout, add a new page. It will clone the last page and increment the page number."/>
-                <engine:Label class="BodyText" text="Make one more. You should have three pages at this point. You are free to call them whatever you want."/>
-            </engine:VisualElement>
-            <engine:VisualElement class="ListItem">
-                <engine:Label class="ListItemTitle" text="Generate Resources"/>
-                <engine:Label class="BodyText"     text="Now we can generate the resources! Click on the &quot;Create&quot; button at the bottom of the window. It will look for errors before generating the files."/>
-                <engine:Label class="BoldBodyText" text="If the window stays open, this mean there's a problem in a page. Look at the console to see the issues. No resource should have been generated. You can try again after fixing the pages or cheat sheets."/>
-                <engine:Label class="BodyText" text="If it's not the case, this mean it's generating and import the files into the project. Unity will compile when this step is done. If the compilation fails you can contact me, it should never happen."/>
-                <engine:Label class="BodyText" text="After the compilation, try to select it in the selector window. Your cheat sheet will show a generic message, that means it worked and you can modify the generated UXML file."/>
-                </engine:VisualElement>
-        </engine:VisualElement>
-
-        
-
-        <engine:Label class="BoldBodyText" text="Congratulations! You have finished the tutorial! You should be able to make cheat sheets in no time."/>
-        <engine:Label class="BodyText" text="You can go further by adding Interactivity in your cheat sheets to improve the user experience (UX)."/>
-
-        <engine:Label class="SectionTitle" text="Add Interactivity"/>
-        <engine:Label class="BodyText"       text="You have to modify the generated &quot;.cs&quot; files if you want to make your cheat sheets interactable."/>
-        <engine:Label class="BodyText"       text="You can change the selected page from the window or open a link, for example. Everything you can do in Unity Editor is also doable here!"/>
-        <engine:Label class="ItalicBodyText" text="The API and some examples are available in the complete documentation."/>
-
-        <engine:VisualElement class="PageEndSpace"/>
-
-    </engine:VisualElement>
-</engine:UXML>
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="Root">
+        <Style src="HomeStyles.uss" />
+        <ui:Label text="Create A Cheat Sheet" class="MainTitle" />
+        <ui:Label text="In this tutorial, we will use the built-in Cheat Sheets Creator, so you can make the files quickly. We will also create three pages, so you learn how to create several cheat sheets and pages." class="BodyText" />
+        <ui:Label text="You can make these files manually, like in the Script And Custom Attribute page." class="BodyText" />
+        <ui:VisualElement class="MiniButtonContainer">
+            <ui:Button name="GoToPage3Btn" text="Go to Script And Custom Attribute" class="MiniButton" />
+        </ui:VisualElement>
+        <ui:Label text="Cheat Sheets Creator Overview" class="SectionTitle" />
+        <ui:Label text="To access the cheat sheet creator, click on the + in the top-right corner of the selector window, at the end of the search bar." class="BodyText" />
+        <ui:VisualElement class="ImageFrame">
+            <ui:VisualElement class="Image_AccessCreatorWizard" />
+        </ui:VisualElement>
+        <ui:Label text="Once you open the wizard, it might be confusing at first glance but it&apos;s actually simple once you decomposed it into layouts!" class="BodyText" />
+        <ui:VisualElement class="ImageFrame">
+            <ui:VisualElement class="Image_CreatorWizard" />
+        </ui:VisualElement>
+        <ui:VisualElement class="List">
+            <ui:VisualElement class="ListItem">
+                <ui:VisualElement class="AllignInRow">
+                    <ui:VisualElement class="Rectangle" style="border-color: green;" />
+                    <ui:Label text="List Of Cheat Sheets" class="ListItemTitle" />
+                </ui:VisualElement>
+                <ui:Label text="This will regroup the pages in the same section. You can also add several cheat sheets!" class="ListItemBody" />
+                <ui:Label text="It represents a CheatSheetElement class." class="ListItemItalicBody" />
+            </ui:VisualElement>
+            <ui:VisualElement class="ListItem">
+                <ui:VisualElement class="AllignInRow">
+                    <ui:VisualElement class="Rectangle" style="border-color: red;" />
+                    <ui:Label text="List Of Pages" class="ListItemTitle" />
+                </ui:VisualElement>
+                <ui:Label text="This list is unique for each cheat sheet." class="ListItemBody" />
+                <ui:Label text="It represents a CustomCheatSheet attribute." class="ListItemItalicBody" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Label text="ListView was considered during the development but you can&apos;t have individual item size and you can&apos;t make it reorderable anymore. I&apos;m using ScrollView instead, for now." class="ItalicBodyText" />
+        <ui:Label text="Generate Your First Cheat Sheet" class="SectionTitle" />
+        <ui:Label text="Now we can start to make a cheat sheet!" class="BodyText" />
+        <ui:Label text="Every fields have a tooltip, if you forgot what field does what." class="ItalicBodyText" />
+        <ui:VisualElement class="List">
+            <ui:VisualElement class="ListItem">
+                <ui:Label text="Configuring A Cheat Sheet" class="ListItemTitle" />
+                <ui:Label text="We will call this cheat sheet &quot;Test&quot;. You can name it whatever you like." class="BodyText" />
+                <ui:Label text="The tree path will be &quot;Test Section&quot;. If you want to create a subsection, you can put a &apos;/&apos; separator and then a new section name. You can also put no section name at all but I strongly recommand to regroup your pages under a section, unless you checked the checkbox bellow." class="BodyText" />
+                <ui:Label text="You can let these checkboxes as they are. It will add a subsection to the tree path with the name of this cheat sheet." class="ItalicBodyText" />
+                <ui:Label text="Now you have to choose a &quot;Resources&quot; folder. Try to create an empty &quot;Resources&quot; folder anywhere in your project. Click on &quot;Open Folder...&quot; to pick a folder." class="BodyText" />
+            </ui:VisualElement>
+            <ui:VisualElement class="ListItem">
+                <ui:Label text="Configuring A Page" class="ListItemTitle" />
+                <ui:Label text="Like for the cheat sheet, you can name this page whatever you like." class="BodyText" />
+                <ui:Label text="Check the checkbox &quot;Use Number&quot; and don&apos;t change their values." class="BodyText" />
+                <ui:Label text="When we will create a new page, it will clone this one and increment the page number." class="ItalicBodyText" />
+            </ui:VisualElement>
+            <ui:VisualElement class="ListItem">
+                <ui:Label text="Adding A New Page" class="ListItemTitle" />
+                <ui:Label text="Still in the cheat sheet layout, add a new page. It will clone the last page and increment the page number." class="BodyText" />
+                <ui:Label text="Make one more. You should have three pages at this point. You are free to call them whatever you want." class="BodyText" />
+            </ui:VisualElement>
+            <ui:VisualElement class="ListItem">
+                <ui:Label text="Generate Resources" class="ListItemTitle" />
+                <ui:Label text="Now we can generate the resources! Click on the &quot;Create&quot; button at the bottom of the window. It will look for errors before generating the files." class="BodyText" />
+                <ui:Label text="If the window stays open, this mean there&apos;s a problem in a page. Look at the console to see the issues. No resource should have been generated. You can try again after fixing the pages or cheat sheets." class="BoldBodyText" />
+                <ui:Label text="If it&apos;s not the case, this mean it&apos;s generating and import the files into the project. Unity will compile when this step is done. If the compilation fails you can contact me, it should never happen." class="BodyText" />
+                <ui:Label text="After the compilation, try to select it in the selector window. Your cheat sheet will show a generic message, that means it worked and you can modify the generated UXML file." class="BodyText" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Label text="Congratulations! You have finished the tutorial! You should be able to make cheat sheets in no time." class="BoldBodyText" />
+        <ui:Label text="You can go further by adding Interactivity in your cheat sheets to improve the user experience (UX)." class="BodyText" />
+        <ui:Label text="Add Interactivity" class="SectionTitle" />
+        <ui:Label text="You have to modify the generated &quot;.cs&quot; files if you want to make your cheat sheets interactable." class="BodyText" />
+        <ui:Label text="You can change the selected page from the window or open a link, for example. Everything you can do in Unity Editor is also doable here!" class="BodyText" />
+        <ui:Label text="The API and some examples are available in the complete documentation." class="ItalicBodyText" />
+        <ui:VisualElement class="PageEndSpace" />
+    </ui:VisualElement>
+</ui:UXML>
