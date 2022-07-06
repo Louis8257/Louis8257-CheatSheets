@@ -1,0 +1,7 @@
+{ "name": "com.Louis8257.Louis8257-CheatSheets",
+  "version": "1.0.0",
+  "displayName": "Cheat Sheets",
+  "description": "A plugin for Unity to find specific information about Unity faster and offline!",
+  "unity": "2019.1",
+  "documentationUrl": "https://example.com/",
+}

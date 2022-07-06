@@ -120,6 +120,16 @@ namespace CheatSheets {
         /// <para>Should describe this cheat sheet or explicitly say the conserned topics.</para>
         /// </summary>
         public string[] keywords;
+
+        /// <summary>
+        /// <para>For easier searches.</para>
+        /// </summary>
+        public string author;
+
+        /// <summary>
+        /// <para>The Unity versions this page is compatible with.</para>
+        /// </summary>
+        public string[] unityVersions;
         
         [SerializeField]
         public CheatSheetElement element;
@@ -260,6 +270,11 @@ namespace CheatSheets {
                     break;
                 }
             }
+
+            if ( !hasKeyword && keyword.Contains(this.author) ) {
+                hasKeyword = true;
+            }
+
             return hasKeyword;
         }
     }
