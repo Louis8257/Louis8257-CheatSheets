@@ -17,24 +17,24 @@
     <Position X="13.25" Y="5.25" Width="5" />
     <AssociationLine Name="previousPage" Type="CheatSheets.CustomCheatSheetAttribute" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="17.812" Y="11.04" />
-        <Point X="17.812" Y="11.193" />
-        <Point X="19.474" Y="11.193" />
-        <Point X="19.474" Y="10.098" />
-        <Point X="18.25" Y="10.098" />
+        <Point X="17.375" Y="11.425" />
+        <Point X="17.375" Y="12.447" />
+        <Point X="20.103" Y="12.447" />
+        <Point X="20.103" Y="9.438" />
+        <Point X="18.25" Y="9.438" />
       </Path>
     </AssociationLine>
     <AssociationLine Name="nextPage" Type="CheatSheets.CustomCheatSheetAttribute" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="17.625" Y="11.04" />
-        <Point X="17.625" Y="11.423" />
-        <Point X="19.716" Y="11.423" />
-        <Point X="19.716" Y="9.669" />
-        <Point X="18.25" Y="9.669" />
+        <Point X="17.75" Y="11.425" />
+        <Point X="17.75" Y="12.059" />
+        <Point X="19.519" Y="12.059" />
+        <Point X="19.519" Y="10" />
+        <Point X="18.25" Y="10" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AIOAAAAAgAAAQACgAAAAGAAcgCIQUAAAAAAkAAAAAIE=</HashCode>
+      <HashCode>AIOABAAAgAAAQACgAAAAGIAcgCIQUAAAAAAkAAAAAIE=</HashCode>
       <FileName>Assets\Louis8257\Unity-CheatSheets\CheatSheets\Editor\CheatSheetElement.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -116,6 +116,16 @@
     <Position X="20.25" Y="5.75" Width="1.5" />
     <TypeIdentifier />
     <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CheatSheets.UnityVersion">
+    <Position X="4.5" Y="8.25" Width="4" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AADwJxAPwP9/+D/k/z//A/5BcPAPWAAA/A8PwMA/IAA=</HashCode>
+      <FileName>Assets\Louis8257\Unity-CheatSheets\CheatSheets\Editor\UnityVersion.cs</FileName>
+    </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

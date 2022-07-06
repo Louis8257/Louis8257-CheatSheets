@@ -8,7 +8,7 @@
         int major, minor, patch;
 
         /// <summary>
-        /// <para>The patch number can have leters.</para>
+        /// <para>In addition of <see cref="patch"/>. The patch number can have leters.</para>
         /// </summary>
         string suffix = "";
 
